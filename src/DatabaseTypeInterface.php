@@ -11,7 +11,13 @@ namespace Ixocreate\Contract\Type;
 
 interface DatabaseTypeInterface
 {
+    /**
+     * @return mixed
+     */
     public function convertToDatabaseValue();
 
+    /**
+     * @return string
+     */
     public static function baseDatabaseType(): string;
 }
